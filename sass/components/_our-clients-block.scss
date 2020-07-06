@@ -1,0 +1,29 @@
+.clients-container {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.client-list {
+	display: flex;
+}
+.client-list-item:not(:last-child) {
+	margin-right: 30px;
+}
+.client-list-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 90px;
+	border: 1px solid currentColor;
+	border-radius: 4px;
+	color: $primary-icon-color;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+.client-logo-icon {
+	fill: currentColor;
+}

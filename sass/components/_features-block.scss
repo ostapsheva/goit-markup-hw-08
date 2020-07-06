@@ -1,0 +1,49 @@
+.feature-container {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.feature-list {
+	display: flex;
+
+	&-item {
+		width: calc((100% - 30px * 3) / 4);
+	}
+	&-item:not(:last-child) {
+		margin-right: 30px;
+	}
+	&-item::before {
+		content: "";
+		display: block;
+		height: 120px;
+		margin-bottom: 30px;
+		border-radius: 4px;
+		background-color: $secondary-background-color;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.feature-icon-antenna::before {
+	background-image: url(../images/feature-antenna.svg);
+}
+.feature-icon-clock::before {
+	background-image: url(../images/feature-clock.svg);
+}
+.feature-icon-laptop::before {
+	background-image: url(../images/feature-laptop.svg);
+}
+.feature-icon-astronaut::before {
+	background-image: url(../images/feature-astronaut.svg);
+}
+.features-title {
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: $title-text-color;
+}
+.features-text {
+	font-weight: 400;
+	line-height: 1.71;
+}

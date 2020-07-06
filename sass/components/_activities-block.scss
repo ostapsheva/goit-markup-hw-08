@@ -1,0 +1,30 @@
+.activities-container {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.activities-list {
+	display: flex;
+}
+.activities-card {
+	width: calc((100% - 30px * 2) / 3);
+	position: relative;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+.activities-title {
+	padding-top: 27px;
+	padding-bottom: 27px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.14;
+	text-transform: uppercase;
+	text-align: center;
+	color: $primary-white-color;
+	background-color: $box-undertext-color;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
