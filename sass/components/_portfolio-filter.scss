@@ -2,9 +2,19 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
+
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+		justify-content: start;
+		margin-bottom: 40px;
+	}
 }
 .portfolio-filter-item:not(:last-child) {
 	margin-right: 8px;
+
+	&:nth-child(-n + 3) {
+		margin-bottom: 15px;
+	}
 }
 .portfolio-button {
 	border-radius: 4px;
