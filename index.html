@@ -16,7 +16,7 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container header-container">
+			<div class="header-container">
 				<nav class="site-nav">
 					<a class="logo header-logo" href="./index.html">
 						<span class="logo-color">Web</span>
@@ -57,17 +57,20 @@
 		<main>
 			<!--Герой-->
 			<section class="hero">
-				<div class="hero-content">
-					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
-				</div>
+				<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+				<button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
 			</section>
 			<!--Особенности-->
 			<section>
-				<div class="container feature-container">
+				<div class="container">
 					<h2 class="section-title visually-hidden">Наши преимущества</h2>
 					<ul class="list feature-list">
-						<li class="feature-list-item feature-icon-antenna">
+						<li class="feature-list-item">
+							<div class="feature-icon">
+								<svg width="65" height="70">
+									<use href="./images/symbol-defs.svg#feature-antenna"></use>
+								</svg>
+							</div>
 							<h3 class="features-title">
 								Внимание к деталям
 							</h3>
@@ -75,19 +78,34 @@
 								Идейные соображения, а также начало повседневной работы по формированию позиции.
 							</p>
 						</li>
-						<li class="feature-list-item feature-icon-clock">
+						<li class="feature-list-item">
+							<div class="feature-icon">
+								<svg width="65" height="70">
+									<use href="./images/symbol-defs.svg#feature-clock"></use>
+								</svg>
+							</div>
 							<h3 class="features-title">Пунктуальность</h3>
 							<p class="features-text">
 								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 							</p>
 						</li>
-						<li class="feature-list-item feature-icon-laptop">
+						<li class="feature-list-item">
+							<div class="feature-icon">
+								<svg width="65" height="70">
+									<use href="./images/symbol-defs.svg#feature-laptop"></use>
+								</svg>
+							</div>
 							<h3 class="features-title">Планирование</h3>
 							<p class="features-text">
 								Равным образом консультация с широким активом в значительной степени обуславливает.
 							</p>
 						</li>
-						<li class="feature-list-item feature-icon-astronaut">
+						<li class="feature-list-item">
+							<div class="feature-icon">
+								<svg width="65" height="70">
+									<use href="./images/symbol-defs.svg#feature-astronaut"></use>
+								</svg>
+							</div>
 							<h3 class="features-title">
 								Современные технологии
 							</h3>
@@ -99,8 +117,8 @@
 				</div>
 			</section>
 			<!--Чем мы занимаемся-->
-			<section>
-				<div class="container activities-container">
+			<section class="activities-section">
+				<div class="container">
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<ul class="list activities-list">
 						<li class="activities-card">
@@ -120,11 +138,21 @@
 			</section>
 			<!--Наша команда-->
 			<section class="team-container-background">
-				<div class="container team-container">
+				<div class="container">
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="list team-list">
 						<li class="team-card">
-							<img src="./images/product-designer.jpg" width="270" height="260" alt="Николай Кучаренко" />
+							<picture>
+								<source
+									media="(max-width: 1199px)"
+									srcset="./../images/team/nikolay-min.jpg 1x, ./../images/team/nikolay-min@x2.jpg 2x"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./../images/team/nikolay.jpg 1x, ./../images/team/nikolay@x2.jpg 2x"
+								/>
+								<img src="./../images/team/nikolay-min.jpg" alt="Фото Николай Кучеренко" />
+							</picture>
 							<div class="team-card-info">
 								<h3 class="team-card-name">Николай Кучеренко</h3>
 								<p class="team-card-profession">Product Designer</p>
@@ -171,7 +199,17 @@
 							</div>
 						</li>
 						<li class="team-card">
-							<img src="./images/frontend-developer.jpg" width="270" height="260" alt="Ольга Иванова" />
+							<picture>
+								<source
+									media="(max-width: 1199px)"
+									srcset="./../images/team/olga-min.jpg 1x, ./../images/team/olga-min@x2.jpg 2x"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./../images/team/olga.jpg 1x, ./../images/team/olga@x2.jpg 2x"
+								/>
+								<img src="./img/team/olga-min.jpg" alt="Фото Ольга Иванова" />
+							</picture>
 							<div class="team-card-info">
 								<h3 class="team-card-name">Ольга Иванова</h3>
 								<p class="team-card-profession">Frontend Developer</p>
@@ -218,7 +256,17 @@
 							</div>
 						</li>
 						<li class="team-card">
-							<img src="./images/marketing.jpg" width="270" height="260" alt="Андрей Шевченко" />
+							<picture>
+								<source
+									media="(max-width: 1199px)"
+									srcset="./../images/team/andrei-min.jpg 1x, ./../images/team/andrei-min@x2.jpg 2x"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./../images/team/andrei.jpg 1x, ./../images/team/andrei@x2.jpg 2x"
+								/>
+								<img src="./img/team/andrei-min.jpg" alt="Фото Андрей Шевченко" />
+							</picture>
 							<div class="team-card-info">
 								<h3 class="team-card-name">Андрей Шевченко</h3>
 								<p class="team-card-profession">Marketing</p>
@@ -265,7 +313,17 @@
 							</div>
 						</li>
 						<li class="team-card">
-							<img src="./images/ui-designer.jpg" width="270" height="260" alt="Иван Николаев" />
+							<picture>
+								<source
+									media="(max-width: 1199px)"
+									srcset="./../images/team/ivan-min.jpg 1x, ./../images/team/ivan-min@x2.jpg 2x"
+								/>
+								<source
+									media="(min-width: 1200px)"
+									srcset="./../images/team/ivan.jpg 1x, ./../images/team/ivan@x2.jpg 2x"
+								/>
+								<img src="./img/team/ivan-min.jpg" alt="Фото Иван Николаев" />
+							</picture>
 							<div class="team-card-info">
 								<h3 class="team-card-name">Иван Николаев</h3>
 								<p class="team-card-profession">UI Designer</p>
@@ -316,7 +374,7 @@
 			</section>
 			<!--Постоянные клиенты-->
 			<section>
-				<div class="container clients-container">
+				<div class="container">
 					<h2 class="section-title">Постоянные клиенты</h2>
 					<ul class="list client-list">
 						<li class="client-list-item">

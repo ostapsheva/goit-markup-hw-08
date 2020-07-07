@@ -1,7 +1,12 @@
 .header-container {
-	display: flex;
+	// display: flex;
 	background-color: $primary-white-color;
 }
 .header-portfolio {
 	border-bottom: 1px solid #ececec;
+}
+
+// ВРЕМЕННО ОТКЛ.
+.header {
+	display: none;
 }

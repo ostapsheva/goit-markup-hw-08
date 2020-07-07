@@ -1,9 +1,11 @@
 .footer {
+	// ВРЕМЕННО ОТКЛ.
+	display: none;
 	background-color: $footer-background-color;
 
 	&-container {
-		display: flex;
-		align-items: baseline;
+		// display: flex;
+		// align-items: baseline;
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}

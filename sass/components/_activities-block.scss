@@ -1,6 +1,7 @@
-.activities-container {
-	padding-top: 94px;
-	padding-bottom: 94px;
+.activities-section {
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
 }
 .activities-list {
 	display: flex;
