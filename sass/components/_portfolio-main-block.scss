@@ -1,17 +1,21 @@
 .portfolio-card-conteiner {
 	display: flex;
 	flex-wrap: wrap;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
 }
 .portfolio-card {
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 30px * 2) / 3);
+		margin-right: 30px;
 		margin-bottom: 30px;
 	}
 
-	&:nth-child(3n + 2) {
+	&:nth-child(3n) {
 		@media screen and (min-width: 1200px) {
-			margin-right: 30px;
-			margin-left: 30px;
+			margin-right: 0px;
 		}
 	}
 	&:nth-last-child(-n + 3) {
@@ -28,7 +32,7 @@
 		}
 	}
 	&:nth-child(odd) {
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
 			margin-right: 30px;
 		}
 	}
