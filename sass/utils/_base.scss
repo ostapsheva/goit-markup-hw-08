@@ -26,3 +26,7 @@ svg {
 button {
 	cursor: pointer;
 }
+:hover,
+:focus {
+	outline-color: $accent-color;
+}

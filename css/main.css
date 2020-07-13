@@ -31,6 +31,11 @@ button {
   cursor: pointer;
 }
 
+:hover,
+:focus {
+  outline-color: #2196f3;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -124,6 +129,8 @@ textarea {
 }
 
 .footer-logo {
+  font-size: 24px;
+  line-height: 1.17;
   margin-bottom: 20px;
 }
 
@@ -606,18 +613,61 @@ textarea {
 }
 
 .footer {
-  display: none;
   background-color: #2f303a;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  align-items: baseline;
 }
 
-.footer-address {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-block {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-block {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-block {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-block {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+  }
 }
 
 .address {
@@ -642,11 +692,6 @@ textarea {
   color: #2196f3;
 }
 
-.footer-socials-links {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-}
-
 .join-in-text {
   display: block;
   margin-bottom: 20px;
@@ -658,6 +703,12 @@ textarea {
 
 .footer-links-list {
   display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-links-list {
+    justify-content: center;
+  }
 }
 
 .footer-links-item:not(:last-child) {
@@ -680,8 +731,17 @@ textarea {
   background-color: #2196f3;
 }
 
-.mail-subscribe-container {
-  width: calc((100% - 30px * 1) / 2);
+@media screen and (max-width: 1199px) {
+  .mail-subscribe-container {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-subscribe-container {
+    width: calc((100% - 30px * 1) / 2);
+  }
 }
 
 .subscribe-title {
@@ -693,10 +753,16 @@ textarea {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+  }
+}
+
 .subscribe-input {
+  width: 100%;
   height: 50px;
   padding: 14px 15px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -710,6 +776,20 @@ textarea {
 
 .subscribe-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-input {
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    max-width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscribe-button {
@@ -730,6 +810,12 @@ textarea {
 .subscribe-button:hover, .subscribe-button:focus {
   color: #2196f3;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-button {
+    margin: 0 auto;
+  }
 }
 
 .subscribe-button-icon {
