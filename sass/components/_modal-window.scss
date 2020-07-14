@@ -50,6 +50,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: #ffffff;
 	color: #000000;
+	outline: none;
 
 	&:hover .form-close-icon,
 	&:focus .form-close-icon {
@@ -185,8 +186,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	// display: block;
-	// text-align: center;
 	margin-bottom: 30px;
 }
 .form-checkbox-input {
@@ -212,18 +211,14 @@
 	}
 }
 .checkbox-icon {
-	// display: inline-block;
-	// vertical-align: middle;
-	width: 16px;
-	height: 15px;
+	min-width: 16px;
+	min-height: 15px;
 	border: 2px solid #212121;
 	border-radius: 2px;
 	margin-right: 5px;
 }
 
 .form-checkbox-text {
-	// display: inline-block;
-	// vertical-align: middle;
 	margin: 0px;
 	text-align: center;
 	font-weight: 400;
