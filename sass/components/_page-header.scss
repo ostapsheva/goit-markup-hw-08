@@ -1,12 +1,20 @@
 .header-container {
-	// display: flex;
+	display: flex;
+	max-width: 480px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+
 	background-color: $primary-white-color;
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 768px;
+		// max-width: 1199px;
+	}
+	@media screen and (min-width: 1200px) {
+		max-width: 1200px;
+	}
 }
 .header-portfolio {
 	border-bottom: 1px solid #ececec;
-}
-
-// ВРЕМЕННО ОТКЛ.
-.header {
-	display: none;
 }

@@ -1,11 +1,11 @@
 .site-nav {
-	// display: flex;
-	// align-items: center;
+	display: flex;
+	align-items: center;
 
-	// &-list {
-	// 	display: flex;
-	// 	align-items: center;
-	// }
+	&-list {
+		display: flex;
+		align-items: center;
+	}
 }
 .nav-list-item:not(:last-child) {
 	margin-right: 50px;

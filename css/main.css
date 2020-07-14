@@ -100,15 +100,28 @@ textarea {
 }
 
 .header-container {
+  display: flex;
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1200px;
+  }
 }
 
 .header-portfolio {
   border-bottom: 1px solid #ececec;
-}
-
-.header {
-  display: none;
 }
 
 .logo {
@@ -124,18 +137,39 @@ textarea {
   color: #2196f3;
 }
 
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
 .header-logo {
   margin-right: 85px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-logo {
+    margin-right: 81px;
+  }
+}
+
 .footer-logo {
-  font-size: 24px;
-  line-height: 1.17;
   margin-bottom: 20px;
 }
 
 .footer-logo-color {
   color: #ffffff;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list-item:not(:last-child) {
@@ -175,8 +209,38 @@ textarea {
   background-color: #2196f3;
 }
 
+.contacts {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .contacts-item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.contacts-item.phone {
+  padding-left: 1px;
 }
 
 .contacts-link {
@@ -187,6 +251,13 @@ textarea {
   letter-spacing: 0.02em;
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .contacts-link:hover, .contacts-link:focus {
