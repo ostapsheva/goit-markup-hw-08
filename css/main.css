@@ -1292,6 +1292,7 @@ textarea {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  color: #000000;
   outline: none;
 }
 
@@ -1301,7 +1302,7 @@ textarea {
 }
 
 .form-close-icon {
-  fill: #000000;
+  fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
