@@ -15,10 +15,20 @@
 	}
 }
 .header-logo {
-	margin-right: 85px;
+	display: flex;
+
+	@media screen and (max-width: 767px) {
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
 
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		align-items: center;
 		margin-right: 81px;
+	}
+	@media screen and (min-width: 1200px) {
+		align-items: center;
+		margin-right: 85px;
 	}
 }
 .footer-logo {
